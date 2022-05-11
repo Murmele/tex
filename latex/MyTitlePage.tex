@@ -1,0 +1,44 @@
+%https://tex.stackexchange.com/questions/10130/use-the-values-of-title-author-and-date-on-a-custom-title-page
+%https://tex.stackexchange.com/questions/8351/what-do-makeatletter-and-makeatother-do
+% makeatletter and makeatother is needed
+
+% TODO: implement date / author ...
+
+\makeatletter
+\begin{titlepage}
+	\pagestyle{empty}
+	\begin{center}
+		% So not the margins of the document are used
+		
+		% TODO: add logo here
+%		\begin{centering}
+%			\includegraphics[height=3cm]{Logos/MyLogo.pdf}
+%		\end{centering}
+		
+		\vspace{1.5cm}
+		{\fontsize{50}{60}\selectfont\bfseries \@title \par}
+		\vspace{0.5cm}
+%		{\Large\bfseries \HarnessName \par}
+		\vspace{0.5cm}
+%		{\Large\bfseries \HarnessNumber \par}
+		\vspace{1.5cm}
+%		\includegraphics[width=\textwidth]{\HarnessImage}
+		
+		\vfill
+		\framebox{\@date}
+
+% TODO: add bottom logo
+%	\begin{flushright}
+%		\includegraphics[width=10cm]{Logos/BottomLogo.jpg}
+%	\end{flushright}
+
+%	 https://de.wikibooks.org/wiki/LaTeX/_Eine_Titelseite_erstellen
+%	\begin{picture}(100, 100)(-100, 0)
+%		\put(0,0){
+%			\makebox(0,0)[rt]{\includegraphics[width=10cm]{Logos/BottomLogo.jpg}}
+%		}
+%	\end{picture}
+		
+	\end{center}
+\end{titlepage}
+\makeatother
