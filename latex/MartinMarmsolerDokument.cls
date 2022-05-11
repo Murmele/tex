@@ -45,9 +45,8 @@
 
 %---------------------------------------------------------------------------------------------------------
 % SPECIFIC DEFINES
-\definecolor{MartinRed}{HTML}{cf403c}  
-\definecolor{Color2}{HTML}{aa5f5e}
-\definecolor{Color1}{HTML}{808080}
+\definecolor{Color2}{HTML}{2b3d49} % blue
+\definecolor{Color1}{HTML}{808080} % gray
 
 \newcommand{\Company}{Martin Marmsoler}
 %---------------------------------------------------------------------------------------------------------
